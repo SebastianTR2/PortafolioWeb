@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+    
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS (Animaciones en Scroll) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-4">
+    
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-gray-700 to-gray-500 text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Título -->
+                <h1 class="text-3xl sm:text-4xl font-semibold text-white">
+                    Mi Portafolio
+                </h1>
+                <!-- Icono de menú hamburguesa para móviles -->
+                <button id="menu-toggle" class="text-white focus:outline-none md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Menú de navegación en pantallas grandes -->
+                <nav class="hidden md:flex space-x-8">
+                    <ul class="flex space-x-6">
+                        <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#about">Presentación</a></li>
+                        <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#skills">Habilidades</a></li>
+                        <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#projects">Proyectos</a></li>
+                        <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#experience">Experiencia</a></li>
+                        <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#education">Educación</a></li>
+                        <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Menú de navegación en pantallas pequeñas -->
+            <nav id="menu" class="hidden md:hidden mt-4">
+                <ul class="flex flex-col items-center space-y-4">
+                    <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#about">Presentación</a></li>
+                    <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#skills">Habilidades</a></li>
+                    <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#projects">Proyectos</a></li>
+                    <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#experience">Experiencia</a></li>
+                    <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#education">Educación</a></li>
+                    <li><a class="text-white hover:text-indigo-400 transition duration-300" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Presentación -->
+    <section id="about" class="container-fluid py-5 text-center bg-gradient-to-r from-gray-900 to-gray-700" data-aos="fade-up" style="color: #F4E9CD;">
+        <div class="row align-items-center justify-content-center mx-0" style="min-height: 50vh;"> <!-- Centrado vertical y horizontal -->
+            <!-- Imagen del perfil -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                <img src="usuario.png" class="rounded-circle mb-3" width="700" alt="Foto de perfil">
+            </div>    
+            <!-- Descripción del perfil -->
+            <div class="col-12 col-md-6 text-start d-flex flex-column justify-content-center">
+                <h2 class="text-3xl font-semibold" style="color: #F4E9CD; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); margin-bottom: 20px;">
+                    Félix Bernardo Fuentes Quispe
+                </h2>
+                <p style="color: #D1B29D; font-size: 1.1rem; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); margin-bottom: 30px;">
+                    Soy un profesional con más de 20 años de experiencia en Auditoría y
+                    Seguridad Informática, especializado en Ethical Hacking, administración de
+                    sistemas y bases de datos. Tengo una trayectoria en empresas reconocidas y
+                    en la academia. Mi objetivo es contribuir a mejorar las infraestructuras
+                    tecnológicas y procesos de seguridad en las organizaciones.
+                </p>
+                <a href="#skills" class="btn" style="background-color: #77ACA2; color: #031926; border: none; padding: 15px 25px; font-size: 1.1rem; transition: all 0.3s ease;">
+                    ¡Conóceme más!
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Habilidades -->
+    <section id="skills" class="py-20 bg-gradient-to-r from-gray-900 to-gray-700 text-center" data-aos="fade-up" style="color: #F4E9CD;">
+        <h2 class="text-5xl font-bold text-white mb-16" data-aos="fade-up" style="color: #F4E9CD; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); margin-bottom: 30px;">
+            Habilidades</h2>
+        <p style="color: #D1B29D; font-size: 1.2rem; line-height: 1.8; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); margin-bottom: 40px;">
+            Lenguajes de programación y tecnologías que domino. </p>
+        <div class="accordion" style="max-width: 800px; margin: 0 auto;">
+            <!-- Seguridad Informática y Auditoría -->
+            <div class="accordion-item" style="margin-bottom: 10px;">
+                <input type="checkbox" id="sectionSecurity" class="accordion-checkbox" style="display: none;">
+                <label for="sectionSecurity" class="accordion-header flex items-center justify-between py-3 px-5 bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-semibold text-lg rounded-md cursor-pointer transition-all duration-300 hover:bg-indigo-700 shadow-lg hover:shadow-xl">
+                    <span class="flex items-center">
+                        <i class="fas fa-shield-alt mr-3" style="font-size: 1.2rem;"></i> Seguridad Informática y Auditoría
+                    </span>
+                    <i class="fas fa-chevron-down transition-transform duration-300 transform rotate-0 accordion-icon"></i>
+                </label>
+                <div class="accordion-body bg-gradient-to-r from-gray-100 to-gray-300 text-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl">
+                    <p class="font-semibold text-xl text-indigo-600 mb-4"><strong>Áreas de Especialización:</strong></p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Áreas de especialización -->
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Ethical Hacking y Pentesting</h3>
+                            <p class="text-gray-700">Análisis proactivo de vulnerabilidades en sistemas informáticos, evaluación de seguridad y pruebas de penetración para identificar posibles amenazas.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Análisis de Vulnerabilidades</h3>
+                            <p class="text-gray-700">Evaluación y descubrimiento de fallas de seguridad en infraestructuras tecnológicas, con recomendaciones para mitigar riesgos.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Administración de Firewalls OpenSource</h3>
+                            <p class="text-gray-700">Configuración, gestión y mantenimiento de firewalls OpenSource para proteger redes y sistemas contra accesos no autorizados.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Auditoría de Sistemas</h3>
+                            <p class="text-gray-700">Auditoría exhaustiva de sistemas de información para asegurar la integridad, confidencialidad y disponibilidad de los datos.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Protección de Datos</h3>
+                            <p class="text-gray-700">Implementación de medidas de seguridad para proteger los datos sensibles de los usuarios y cumplir con normativas de privacidad.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Gestión de Accesos</h3>
+                            <p class="text-gray-700">Administración de controles de acceso para asegurar que solo los usuarios autorizados tengan acceso a los recursos críticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Desarrollo y Administración de Sistemas -->
+            <div class="accordion-item" style="margin-bottom: 10px;">
+                <input type="checkbox" id="sectionDevelopment" class="accordion-checkbox" style="display: none;">
+                <label for="sectionDevelopment" class="accordion-header flex items-center justify-between py-3 px-5 bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-semibold text-lg rounded-md cursor-pointer transition-all duration-300 hover:bg-indigo-700 shadow-lg hover:shadow-xl">
+                    <span class="flex items-center">
+                        <i class="fas fa-laptop-code mr-3" style="font-size: 1.2rem;"></i> Desarrollo y Administración de Sistemas
+                    </span>
+                    <i class="fas fa-chevron-down transition-transform duration-300 transform rotate-0 accordion-icon"></i>
+                </label>
+                <div class="accordion-body bg-gradient-to-r from-gray-100 to-gray-300 text-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl">
+                    <p class="font-semibold text-xl text-indigo-600 mb-4"><strong>Áreas de Especialización:</strong></p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Áreas de especialización -->
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Programación en Visual Studio .NET</h3>
+                            <p class="text-gray-700">Desarrollo de aplicaciones robustas y seguras usando Visual Studio .NET, con experiencia en múltiples lenguajes como C#.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Administración de Bases de Datos</h3>
+                            <p class="text-gray-700">Gestión eficiente de bases de datos, optimización de consultas y mantenimiento de la integridad de los datos.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Gestión de Servidores y Redes</h3>
+                            <p class="text-gray-700">Configuración y mantenimiento de servidores y redes, garantizando un rendimiento óptimo y la seguridad en todos los niveles.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Seguridad en Entornos Microsoft</h3>
+                            <p class="text-gray-700">Implementación de políticas de seguridad en entornos Microsoft, protegiendo sistemas y redes dentro de la infraestructura empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Gestión de Proyectos y Documentación -->
+            <div class="accordion-item" style="margin-bottom: 10px;">
+                <input type="checkbox" id="sectionProjectManagement" class="accordion-checkbox" style="display: none;">
+                <label for="sectionProjectManagement" class="accordion-header flex items-center justify-between py-3 px-5 bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-semibold text-lg rounded-md cursor-pointer transition-all duration-300 hover:bg-indigo-700 shadow-lg hover:shadow-xl">
+                    <span class="flex items-center">
+                        <i class="fas fa-project-diagram mr-3" style="font-size: 1.2rem;"></i> Gestión de Proyectos y Documentación
+                    </span>
+                    <i class="fas fa-chevron-down transition-transform duration-300 transform rotate-0 accordion-icon"></i>
+                </label>
+                <div class="accordion-body bg-gradient-to-r from-gray-100 to-gray-300 text-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl">
+                    <p class="font-semibold text-xl text-indigo-600 mb-4"><strong>Áreas de Especialización:</strong></p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Áreas de especialización -->
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Diseño de Sistemas de Gestión Documental</h3>
+                            <p class="text-gray-700">Desarrollo de sistemas para organizar, almacenar y gestionar documentos de manera eficiente y segura.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Digitalización de Archivos Empresariales</h3>
+                            <p class="text-gray-700">Proceso de convertir archivos físicos en digitales, facilitando su almacenamiento y recuperación.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-bold text-lg text-indigo-600 mb-2">Metodologías Ágiles</h3>
+                            <p class="text-gray-700">Uso de metodologías ágiles como Scrum y Kanban para mejorar la eficiencia en la gestión de proyectos tecnológicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Proyectos Destacados -->
+    <section id="projects" class="py-20 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold text-white mb-16" data-aos="fade-up">Proyectos Destacados</h2>
+            <!-- Contenedor de las tarjetas de proyectos -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Proyecto 1: Gestión Documental en ECONAT LTDA -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-file-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">📂 Gestión Documental en ECONAT LTDA</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Desarrollo e Implementación de Sistema Digital (2017)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Desarrollo e implementación de un sistema digital para gestión documental.</li>
+                        <li>Digitalización y seguridad en almacenamiento de archivos críticos.</li>
+                        <li>Optimización de procesos administrativos mediante automatización.</li>
+                    </ul>
+                </div>
+                <!-- Proyecto 2: Auditoría de Seguridad en Redes -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🔐 Auditoría de Seguridad en Redes</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Evaluación de Vulnerabilidades y Protección de Datos (2020)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Evaluación de seguridad en sistemas empresariales.</li>
+                        <li>Pruebas de penetración para detección de vulnerabilidades.</li>
+                        <li>Implementación de protocolos de protección de datos.</li>
+                    </ul>
+                </div>
+                <!-- Proyecto 3: Administración de Servidores y Soporte -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-server text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">💻 Administración de Servidores y Soporte</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Mantenimiento y Configuración de Servidores (2019)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Mantenimiento y configuración de servidores.</li>
+                        <li>Gestión de accesos y seguridad en redes.</li>
+                        <li>Soporte técnico a usuarios y resolución de incidentes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section id="experience" class="py-20 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold text-white mb-16" data-aos="fade-up">Experiencia Laboral</h2>
+            <!-- Contenedor de las tarjetas de experiencia -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Proyecto 1: ECONAT LTDA -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-briefcase text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">💼 ECONAT LTDA (Bolivia)</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Jefe de Proyecto - GESTIÓN DOCUMENTAL (2017)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Desarrollo e implementación de un sistema de gestión documental.</li>
+                        <li>Optimización y digitalización de procesos administrativos.</li>
+                    </ul>
+                </div>
+                <!-- Proyecto 2: U.A.G.R.M. -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-laptop text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">💼 U.A.G.R.M. – Facultad de Contaduría Pública</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Auxiliar de Sala de Cómputo (2005 Julio – Diciembre)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Atención a estudiantes en el uso de software contable y de oficina.</li>
+                        <li>Soporte técnico en hardware y software para equipos de cómputo.</li>
+                    </ul>
+                </div>
+                <!-- Proyecto 3: Corte Departamental Electoral de Santa Cruz -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-gavel text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">💼 Corte Departamental Electoral</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Inspector de Derecho a la Identidad y Participación (2005)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Inspección y supervisión de procesos electorales.</li>
+                        <li>Garantía del derecho a la identidad y participación de la ciudadanía.</li>
+                    </ul>
+                </div>
+                <!-- Proyecto 4: Universidad Autónoma Gabriel René Moreno -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-users text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">💼 Universidad Autónoma Gabriel René Moreno</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Miembro del equipo de autoevaluación (2001)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Participación en la autoevaluación del programa de Ingeniería Informática.</li>
+                        <li>Revisión y análisis de procesos educativos y curriculares.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Educación y Certificaciones -->
+    <section id="education" class="py-20 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold text-white mb-16" data-aos="fade-up">Educación y Certificaciones</h2>
+            <!-- Contenedor de las tarjetas de educación y certificaciones -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Educación 1: Maestría en Auditoría y Seguridad Informática -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-file-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🎓 Maestría en Auditoría y Seguridad Informática</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">UAGRM (Estudios de Posgrado)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Especialización en auditoría de sistemas y seguridad informática.</li>
+                    </ul>
+                </div>
+                <!-- Educación 2: Licenciado en Ingeniería Informática -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🎓 Licenciado en Ingeniería Informática</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">UAGRM (2012)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Formación integral en ingeniería informática y desarrollo de software.</li>
+                    </ul>
+                </div>
+                <!-- Certificación 1: Ethical Pentester Certified -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-server text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🏆 Ethical Pentester Certified</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">The Hacking Day (2002)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Certificación en técnicas avanzadas de pruebas de penetración.</li>
+                    </ul>
+                </div>
+                <!-- Certificación 2: Auditor de Sistema de Información TI -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🏆 Auditor de Sistema de Información TI</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">COSIM TI (2017)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Auditoría en sistemas de información y tecnologías de la información.</li>
+                    </ul>
+                </div>
+                <!-- Certificación 3: Ethical Hacking Conference -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="500">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🏆 Ethical Hacking Conference</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">Ethical Hacking Consultores (2013)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Participación en la conferencia de hacking ético.</li>
+                    </ul>
+                </div>
+                <!-- Certificación 4: Firewall OpenSource Empresarial -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="600">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🏆 Firewall OpenSource Empresarial</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">The Hacking Day (2017)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Implementación de firewalls OpenSource para seguridad empresarial.</li>
+                    </ul>
+                </div>
+                <!-- Certificación 5: Manejo Profesional de Archivos y Gestión Documental -->
+                <div class="experience-card relative p-8 bg-gray-800 shadow-xl rounded-xl hover:scale-105 transform transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="700">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600 rounded-t-xl"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-server text-3xl text-indigo-600 mr-3"></i>
+                        <h4 class="text-xl font-semibold text-white">🏆 Manejo Profesional de Archivos y Gestión Documental</h4>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-400 mb-4">CRITERIA INC. (2016)</h5>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Gestión eficiente de archivos y procesos documentales en empresas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-gray-900 to-gray-700 text-center text-white" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-white mb-16" data-aos="fade-up">Contacto</h2>
+        <p class="text-gray-300 mb-8 text-lg max-w-3xl mx-auto">Si estás interesado en colaborar en proyectos de seguridad informática, auditoría o administración de sistemas, no dudes en contactarme. Estoy siempre en busca de nuevos desafíos y oportunidades para aplicar mis conocimientos. <strong>Puedes contactarme a través de:</strong></p> 
+        <div class="mb-5">
+            <a href="https://linkedin.com" class="btn text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 px-6 py-2 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 mx-2 mb-4 inline-block">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:correo@example.com" class="btn text-white bg-gray-600 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 px-6 py-2 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 mx-2 mb-4 inline-block">
+                <i class="fas fa-envelope"></i> Correo
+            </a>
+        </div>
+        <!-- Formulario -->
+        <form id="contactForm" class="mt-5 max-w-lg mx-auto">
+            <div class="mb-5">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control bg-gray-800 text-white border-2 border-gray-600 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" required>
+            </div>
+            <div class="mb-5">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control bg-gray-800 text-white border-2 border-gray-600 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" required>
+            </div>
+            <div class="mb-5">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control bg-gray-800 text-white border-2 border-gray-600 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 px-6 py-3 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 w-full sm:w-auto">
+                Enviar
+            </button>
+        </form>
+        <!-- Mensaje de éxito -->
+        <div id="successMessage" class="alert alert-success mt-5 max-w-lg mx-auto" style="display: none;">
+            ¡El mensaje se ha enviado correctamente!
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-xs sm:text-sm text-gray-300 mb-3 font-semibold">
+                &copy; 2025 Mi Portafolio. Todos los derechos reservados.
+            </p>
+            <div class="flex justify-center gap-6 mb-5">
+                <a href="https://linkedin.com" target="_blank" class="text-teal-400 hover:text-teal-300 transition duration-300 text-lg sm:text-xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="text-gray-300 hover:text-white transition duration-300 text-lg sm:text-xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:correo@example.com" class="text-gray-300 hover:text-white transition duration-300 text-lg sm:text-xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-400 font-light">Desarrollado por <strong>Mi Nombre</strong>. Diseño adaptado para una experiencia moderna.</p>
+        </div>
+    </footer>
+    
+    
+    <!-- GSAP para animaciones avanzadas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script> AOS.init(); // Inicializa las animaciones AOS </script>
+    <!-- Bootstrap Bundle con Popper.js (💡 NECESARIO PARA EL ACORDEÓN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Personalizado -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
+            gsap.from("#about h2", { duration: 1, y: 20, opacity: 0, delay: 0.5 });
+        });
+    </script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Obtener el formulario y el mensaje de éxito
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+    
+        // Escuchar el evento de envío del formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+    
+            // Mostrar el mensaje de éxito
+            successMessage.style.display = 'block';
+    
+            // Limpiar los campos del formulario (opcional)
+            form.reset();
+    
+            // Opcionalmente, ocultar el mensaje después de unos segundos
+            setTimeout(function() {
+                successMessage.style.display = 'none';
+            }, 5000); // El mensaje desaparecerá después de 5 segundos
+        });
+    </script>
+</body>

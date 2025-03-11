@@ -1,0 +1,127 @@
+:root {
+  --color-bg-dark: #031926; /* Fondo oscuro */
+  --color-text-light: #F4E9CD; /* Color de texto claro */
+  --color-text-accent: #D1B29D; /* Color de texto de acento */
+  --color-btn-bg: #77ACA2; /* Fondo del botón */
+  --color-btn-text: #031926; /* Color de texto del botón */
+  --color-header-bg: #0f3460; /* Color de fondo del header */
+  --color-header-bg-scroll: #0f3460; /* Color de fondo del header al hacer scroll */
+  --color-card-bg: #2D2D2D; /* Fondo de las tarjetas */
+  --color-card-text: #4C8BF5; /* Color de texto de las tarjetas */
+  --color-card-text-muted: #B0B0B0; /* Texto secundario de las tarjetas */
+  --color-footer-bg: #1a1a1a; /* Fondo del footer */
+  --color-footer-text: #B0B0B0; /* Texto del footer */
+  --color-btn-hover: #66A38C; /* Hover del botón */
+  --color-input-bg: #2D2D2D; /* Fondo de los inputs */
+  --color-input-border: #4C8BF5; /* Color de borde de los inputs */
+  --color-alert-success-bg: #4CAF50; /* Fondo del alert de éxito */
+}
+
+/* Body */
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+#about {
+  padding-top: 100px; /* Ajusta según la altura de tu header */
+  margin-top: 80px;
+}
+
+/* Header */
+header {
+  background-color: var(--color-header-bg);
+  color: var(--color-text-light);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: var(--color-header-bg-scroll);
+}
+
+/* Acordeón - Estilos cuando está cerrado por defecto */
+.accordion-checkbox:checked + .accordion-header .accordion-icon {
+  transform: rotate(180deg); /* Rota la flecha cuando está abierto */
+}
+
+.accordion-checkbox:not(:checked) + .accordion-header .accordion-icon {
+  transform: rotate(0deg); 
+}
+
+/* Aseguramos que las secciones del acordeón estén cerradas */
+.accordion-body {
+  display: none; /* Por defecto, las secciones estarán ocultas */
+}
+
+/* Cuando el checkbox esté marcado, mostrar la sección */
+.accordion-checkbox:checked + .accordion-header + .accordion-body {
+  display: block; /* Mostrar el contenido del acordeón cuando el checkbox esté marcado */
+}
+
+/* Animación suave de transición para abrir/cerrar */
+.accordion-body {
+  transition: display 0.3s ease;
+}
+
+
+/* Botones */
+button, .btn {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  padding: 20px;
+  text-align: center;
+  
+  width: 100%;
+  bottom: 0;
+}
+
+/* Inputs */
+input, textarea {
+  background-color: var(--color-input-bg);
+  color: var(--color-text-light);
+  border: 2px solid var(--color-input-border);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--color-btn-bg);
+  outline: none;
+}
+
+/* Alert Success */
+.alert-success {
+  background-color: var(--color-alert-success-bg);
+  color: var(--color-text-light);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
